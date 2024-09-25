@@ -1,0 +1,47 @@
+
+.dashboard {
+  padding: 20px; 
+  background-color: #f5f5f5; 
+}
+
+
+.card-container {
+  display: grid; /*para organizar las tarjetas*/
+  grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual tamaño */
+  gap: 20px; /* Espacio entre cada tarjeta*/
+}
+
+
+.card {
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tarjeta */
+  padding: 15px; /* Espacio interno dentro de cada tarjeta */
+  text-align: center; 
+  transition: transform 0.3s ease; /* Efecto de transición suave al hacer hover */
+}
+
+/* Efecto de hover para la tarjeta */
+.card:hover {
+  transform: translateY(-10px); 
+}
+
+
+.card-image {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+
+.card h3 {
+  font-size: 18px; /* Tamaño de fuente para el título */
+  margin-top: 15px; /* Espacio superior entre la imagen y el título */
+}
+
+
+.card p {
+  font-size: 16px; 
+  color: #333; 
+  margin-top: 5px; 
+}

@@ -1,0 +1,58 @@
+.footer {
+  background-color: gray; 
+  padding: 20px; /* Espaciado interno alrededor del contenido del footer */
+  color: white; 
+}
+
+
+.footer-content {
+  display: flex; /*organiza los elementos horizontalmente */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  justify-content: space-between; /* Coloca el contenido en los extremos con espacio entre ellos */
+}
+
+
+.ubi {
+  width: 150px; /* Ancho de la imagen */
+  height: auto; 
+  margin-right: 20px; 
+}
+
+
+.ubi2 {
+  width: 50px; 
+  height: auto; 
+  margin-right: 20px; 
+}
+
+
+.social-section {
+  text-align: center; /* Centra horizontalmente el texto y el contenido dentro de esta sección */
+  flex: 1; /* Hace que esta sección ocupe el espacio restante entre los otros elementos flexibles (las imágenes) */
+}
+
+
+.footer h2 {
+  margin-bottom: 20px; /* Añade un espacio debajo del título */
+  font-size: 24px; /* Tamaño de fuente de 24px para el título */
+}
+
+
+.social-media {
+  display: flex; /* Usa Flexbox para organizar los iconos horizontalmente */
+  justify-content: center; /* Centra los iconos de redes sociales */
+  gap: 20px; /* Añade un espacio de 20px entre cada icono */
+}
+
+
+.social-media a {
+  color: white; 
+  font-size: 24px; /* Tamaño de fuente para iconos */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  transition: color 0.3s; /* Añade una transición suave de 0.3 segundos al cambiar el color en hover */
+}
+
+/* Efecto al pasar el ratón sobre los enlaces de redes sociales */
+.social-media a:hover {
+  color: #ddd; 
+}

@@ -1,0 +1,34 @@
+<header class="header">
+    <!-- Menú de hamburguesa desplegable -->
+    <div class="menu-hamburguesa">
+      <i class="fas fa-bars icon" (click)="toggleMenu()"></i>
+      <nav class="menu-opciones" [class.show]="menuVisible">
+        <ul class="menu-opciones-ul">
+          <li class="menu-opciones-li">
+            <a href="#" class="menu-opciones-li-a">
+              <i class="fas fa-plus-circle icon"></i> gym
+            </a>
+          </li>
+          <li class="menu-opciones-li">
+            <a href="#" class="menu-opciones-li-a">
+              <i class="fas fa-eye icon"></i> gym
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Contenedor para el título y horarios -->
+    <div class="header-content">
+      <h1>IRON EVOLUTION</h1>
+      <p>Horarios:</p>
+      <ul>
+        <li>De Lunes a Viernes: 5:00 am - 10:00 pm</li>
+        <li>Sábados: 6:00 am - 2:00 pm</li>
+      </ul>
+    </div>
+  
+    <!-- Logo a la derecha -->
+    <img src="Logo.png" alt="Logo de Iron Evolution" class="logo">
+  </header>
+  

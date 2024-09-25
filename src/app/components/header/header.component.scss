@@ -1,0 +1,110 @@
+.header {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  
+  .menu-hamburguesa {
+    position: relative;
+  }
+  
+  .header-content {
+    text-align: center;
+    flex: 1; /* Para que ocupe el espacio disponible y se quede en el centro */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Espacio entre el título y los horarios */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .logo {
+    height: 150px;
+    object-fit: contain;
+    margin-left: auto; /* Asegura que el logo esté alineado a la derecha */
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #ddd;
+  }
+  
+  .menu-opciones {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 200px;
+  }
+  
+  .menu-opciones.show {
+    display: block; /* Mostrar el menú cuando se activa */
+  }
+  
+  .menu-opciones-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-opciones-li {
+    padding: 10px 20px;
+  }
+  
+  .menu-opciones-li-a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-opciones-li-a .icon {
+    margin-right: 8px;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .header-shoes {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+      align-items: center;
+    }
+  
+    .menu-hamburguesa {
+      margin-bottom: 10px;
+    }
+  
+    .logo {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .header-content {
+      text-align: center;
+    }
+  }
+  
